@@ -4,3 +4,6 @@ const app = express();
 app.listen(3002, () => {
     console.log(" serveur fonctionne")
 })
+app.get('/', (req, res) => {
+    res.send("hello from backend")
+})
